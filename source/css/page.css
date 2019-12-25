@@ -1,0 +1,67 @@
+
+/*
+  * 澶栭潰鐩掑瓙鏍峰紡---鑷繁瀹氫箟
+  */
+
+.page_div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: "microsoft yahei";
+    color: #666666;
+    margin-right: 10px;
+    padding-left: 0px;
+    box-sizing: border-box;
+}
+/*
+ * 椤垫暟鎸夐挳鏍峰紡
+ */
+
+.page_div a {
+    min-width: 40px;
+    height: 35px;
+    border: 1px solid #dce0e0!important;
+    text-align: center;
+    margin: 0px 4px;
+    cursor: pointer;
+    line-height: 35px;
+    color: #666666;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.page_div{
+    text-align: center;
+}
+#firstPage,
+#lastPage {
+    width: 50px;
+    color: #333;
+    border: 1px solid #ccc!important;
+    display: none;
+}
+
+#prePage,
+#nextPage {
+    width: 70px;
+    color: #333;
+    display: inline-block;;height: 35px;line-height: 35px;
+    margin:5px 0 0 10px;
+    border: 1px solid #ccc!important;
+}
+
+.page_div .current {
+    background-color: #e6e6e6;
+    border-color: #ccc;
+    color: #333333;
+}
+
+.totalPages {
+    margin: 0 10px;
+}
+
+.totalPages span,
+.totalSize span {
+    color: #333;
+    margin: 0 5px;
+}

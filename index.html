@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="renderer" content="webkit">
+		<meta name="renderer" content="ie-stand">
+		<link rel="stylesheet" href="source/css/hanweb.css">
+		<link rel="stylesheet" href="source/css/gcyp.css">
+		<link rel="stylesheet" href="source/css/jiance.css">
+		<title>河北省空气质量自动监测及发布系统</title>
+
+		<script src="controller/jquery-1.8.3.js"></script>
+		<script src="controller/jquery.placeholder.min.js"></script>
+		<!--页面引入请求组件-->
+		<script src="controller/md5.min.js"></script>
+		<!--<script type="text/javascript" src="//app.gjzwfw.gov.cn/jmopen/jssdk/index.js"></script>-->
+		<!--页面引入模态框，用于详情-->
+		<!--<link rel="stylesheet" href="//app.gjzwfw.gov.cn/jmopen/jmopenpublic/css/model.css">-->
+
+		<!--<script type="text/javascript" src="//app.gjzwfw.gov.cn/jmopen/jmopenpublic/js/page.js"></script>-->
+
+		<script src="controller/public.js"></script>
+		
+       <style>
+	   * {
+		   margin: 0;
+		   padding: 0;
+	   }
+    	body{
+    		/*height:1334px;*/
+    		/*width:750px;*/
+    		/*margin-left:0;*/
+			/*margin-right:0;*/
+    	}
+    	header{
+    		font-size:34px;
+    		color:#FFFFFF;
+    		border-color: #000000;
+    		height:230px;
+    		width:750px;
+    		background-color:#1565a7;
+    	}
+    	article{
+    		height:600px;
+    		width:690px;
+    		margin-left:30px;
+    		margin-top:-68px;
+    		background-color:#F0F4F7;
+    		float:;
+    		border:1px solid #dadada;
+    	}
+    	footer{
+    		font-size:24px;
+    		color:#999999;
+    		height:;
+    		width:690;
+    		background-color:;
+    		border-color: #000000;
+    		margin-top:48px;
+    		margin-left:;
+    		margin-bottom:58px;
+    		text-align:center;
+    	}
+    	form{
+    		
+    	}
+    	input{
+    		
+    	}
+    	table{
+    		width:690px;
+    	}
+    </style>
+		<style>
+			#out {
+				overflow-y: scroll;
+				overflow-x: hidden;
+			}
+
+			.res-line {
+				width: 1135px;
+				margin: 0 auto;
+				height: 22px;
+				background: none;
+			}
+
+			.line-spilt {
+				width: 1135px;
+				/* margin: 0 auto; */
+				margin-top: 10px;
+				height: 2px;
+				background-color: #e4ebf0;
+			}
+
+			.place_txt a {
+				display: inline;
+				/* color: #000000; */
+			}
+			table{
+				background-color: #e4ebf0;
+			}
+		</style>
+
+	</head>
+	<body>
+
+
+<!--状态栏-->
+	<div style="height:40px;width:750px;background-color:">
+		
+	</div>
+<!--头部-->
+	<header>
+		<div style="padding-left:30px;padding-top:87px;">河北省空气质量自动监测及发布系统</div>
+	</header>
+	
+<!--主内容区-->
+	<article>
+
+		<!--内容开始-->
+		<div class="chax">
+
+			</div>
+
+			<div class="outcontainer" style="margin-top:64px;margin-right:600px;float:right;">
+				<div id="container">
+					<div id="top_container">
+						<!-- <div class="aqi_title" id="aqi_title_city" >城市AQI实时(09/04 09:00)</div> -->
+						<div class="aqi_title" id="aqi_title_city" style="color: #FFFFFF;"></div>
+						<div class="top_table">
+							<table style="font-family:MicrosoftYaHei;text-align:center;">
+								<thead>
+									<tr>
+										<td style="width: 20%;">城市</td>
+										<td style="width: 20%;">级别</td>
+										<td style="width: 15%;">图例</td>
+										<td style="width: 15%;">指数</td>
+										<td style="width: 30%;">首要污染物</td>
+									</tr>
+								</thead>
+								<tbody id="city_info">
+								</tbody>
+							</table>
+						</div>
+
+					</div>
+					<div id="bttom_container">
+						<!-- <div class="aqi_title" id="aqi_title_pointer">点位AQI实时(09/04 09:00)</div> -->
+						<div class="aqi_title" id="aqi_title_pointer" style="color: #FFFFFF;"></div>
+
+						<div class="bottom_table">
+							<table style="font-family:MicrosoftYaHei;text-align:center;">
+								<thead>
+									<tr>
+										<td style="width: 20%;">点位名称</td>
+										<td style="width: 20%;">级别</td>
+										<td style="width: 15%;">图例</td>
+										<td style="width: 15%;">指数</td>
+										<td style="width: 30%;">首要污染物</td>
+									</tr>
+								</thead>
+								<tbody id="city_pointer_info">
+
+								</tbody>
+							</table>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</article>
+		<!--服务提供-->
+	<footer>
+		本服务由河北省提供
+	</footer>
+		<!--尾部-->
+
+		<script src="controller/index1.js"></script>
+	</body>
+</html>
